@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo should render properly 1`] = `
+"<div className=\\"todoContainer\\">
+  <input type=\\"checkbox\\" onClick={[Function: bound mockConstructor]} checked={false} />
+  <div className=\\"todoText \\">
+    dummyTodo
+  </div>
+  <button className=\\"markAsDone\\" onClick={[Function: bound mockConstructor]}>
+    🗑
+  </button>
+</div>"
+`;

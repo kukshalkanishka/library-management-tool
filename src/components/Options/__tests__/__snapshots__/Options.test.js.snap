@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Options should render properly 1`] = `
+"<div className=\\"form options\\">
+  <h3>
+    FUN TO-DO
+  </h3>
+  <Link to=\\"/login\\" className=\\"option\\">
+    Login
+  </Link>
+  <Link to=\\"/signup\\" className=\\"option\\">
+    Sign Up
+  </Link>
+</div>"
+`;

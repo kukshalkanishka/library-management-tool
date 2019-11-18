@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render properly 1`] = `
+"<BrowserRouter>
+  <Route exact={true} path=\\"/\\" component={[Function: Options]} />
+  <Route path=\\"/login\\" component={[Function: Login]} />
+  <Route path=\\"/signup\\" component={[Function: SignUp]} />
+  <Route path=\\"/home\\" component={[function]} />
+</BrowserRouter>"
+`;

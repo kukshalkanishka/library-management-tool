@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should render properly 1`] = `
+"<form method=\\"POST\\" action=\\"/login\\" className=\\"form\\">
+  <h3>
+    LOGIN
+  </h3>
+  <input type=\\"text\\" autocomplete=\\"off\\" placeholder=\\"username\\" name=\\"username\\" required={true} />
+  <input type=\\"password\\" autocomplete=\\"off\\" placeholder=\\"password\\" name=\\"password\\" required={true} />
+  <input type=\\"submit\\" value=\\"LOGIN\\" />
+</form>"
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render properly 1`] = `
+"<div className=\\"todoMainContainer\\">
+  <div className=\\"stickyHeader\\">
+    <h3 className=\\"homeHeader\\">
+      FUN TO-DO
+    </h3>
+    <AddTodoPrompt />
+  </div>
+  <div className=\\"todos\\">
+    <TodoList todos={{...}} />
+  </div>
+</div>"
+`;

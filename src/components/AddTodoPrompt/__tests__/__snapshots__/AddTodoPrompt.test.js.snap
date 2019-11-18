@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodoPrompt should render properly 1`] = `
+"<form method=\\"POST\\" action=\\"/addTodo\\" className=\\"addTodo\\">
+  <input type=\\"text\\" name=\\"todo\\" placeholder=\\"Add your todo here\\" className=\\"addTodoBox\\" autocomplete=\\"off\\" required={true} />
+  <input type=\\"submit\\" value=\\"ADD TODO\\" className=\\"addTodoButton\\" />
+</form>"
+`;
