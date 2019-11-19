@@ -39,7 +39,6 @@ const loginHandler = async (req, res) => {
 
 const addBookHandler = async (req, res) => {
   const {book} = req.body;
-  // TODO: rename id to created_at
   await insertQuery(TABLES.books, {
     name: book,
     id: JSON.stringify(Date.now())

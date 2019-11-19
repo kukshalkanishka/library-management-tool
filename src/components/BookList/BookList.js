@@ -4,9 +4,10 @@ import Book from "../Book/Book";
 class BookList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { books: props.books };
+    this.state = {books: props.books};
+    this.props = props;
     this.toggleTodoState = this.toggleTodoState.bind(this);
-    this.deleteTodo = this.deleteTodo.bind(this);
+    this.deleteBook = this.deleteBook.bind(this);
   }
 
   async toggleTodoState(body) {
@@ -17,13 +18,13 @@ class BookList extends React.Component {
       },
       body: JSON.stringify(body)
     })
-      .then(res => res.json())
-      .then(res => {
-        this.setState({ books: res });
-      });
+    .then(res => res.json())
+    .then(res => {
+      this.setState({books: res});
+    });
   }
 
-  async deleteTodo(body) {
+  async deleteBook(body) {
     await fetch("/todo", {
       method: "DELETE",
       headers: {
@@ -31,10 +32,10 @@ class BookList extends React.Component {
       },
       body: JSON.stringify(body)
     })
-      .then(res => res.json())
-      .then(res => {
-        this.setState({ books: res });
-      });
+    .then(res => res.json())
+    .then(res => {
+      this.setState({books: res});
+    });
   }
 
   componentWillReceiveProps(newProps) {
@@ -45,8 +46,9 @@ class BookList extends React.Component {
 
   render() {
     const {books} = this.state;
+    const {toggleAssignBookOverlay} = this.props;
     return (
-      <div>
+      <div className='books'>
         {Object.keys(books).reverse().map(bookName => {
           return (
             <Book
@@ -54,7 +56,7 @@ class BookList extends React.Component {
               details={books[bookName]}
               name={bookName}
               toggleTodoState={this.toggleTodoState}
-              deleteTodo={this.deleteTodo}
+              toggleAssignBookOverlay={toggleAssignBookOverlay}
             />
           );
         })}

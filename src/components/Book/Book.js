@@ -1,13 +1,13 @@
 import React from "react";
 
-const Book = ({name, details, toggleTodoState, deleteTodo}) => {
+const Book = ({name, details, toggleAssignBookOverlay}) => {
   return (
-    <div className="todoContainer">
+    <div className="bookContainer">
       <div className={`todoText ${details.number ? "" : "done"}`}>{name}</div>
+      <div className={`todoText ${details.number ? "" : "done"}`}>{details.number}</div>
       <button
-        className="markAsDone"
-        onClick={deleteTodo.bind(null, {name})}
-      >{`\u{1F5D1}`}</button>
+        onClick={toggleAssignBookOverlay.bind(null, {name})}
+      >Assign</button>
     </div>
   );
 };
